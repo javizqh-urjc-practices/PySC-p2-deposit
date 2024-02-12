@@ -4,7 +4,7 @@
 (:objects
   table floor - location
   bottle newspaper rotten_apple - item
-  walle - robot
+  walle eva - robot
 )
 
 ; Initially everything is on the floor and robot is by the table
@@ -25,7 +25,13 @@
 
   (robot_at walle table)
   (gripper_free walle)
-  (item_at bottle floor)
+  (robot_at eva floor)
+  (gripper_free eva)
+  (robot_tall eva)
+  (robot_vacuum walle)
+  (is-high table)
+  (is-low floor)
+  (item_at bottle table)
   (item_at newspaper floor)
   (item_at rotten_apple floor)
 )
