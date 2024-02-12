@@ -10,9 +10,9 @@
 ; Initially everything is on the floor and robot is by the table
 (:init
   (= (weight bottle) 2)
-  (= (weight newspaper) 2)
-  (= (weight rotten_apple) 2)
-  (= (max-load walle) 3)
+  (= (weight newspaper) 1)
+  (= (weight rotten_apple) 1)
+  (= (max-load walle) 6)
   (= (current-load walle) 0)
 
   (robot_at walle table)
